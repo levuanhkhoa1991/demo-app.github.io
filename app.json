@@ -1,0 +1,7 @@
+{
+  "expo": {
+    "name": "Quick Order (RN)",
+    "slug": "quick-order-app-rn",
+    "platforms": ["ios", "android", "web"]
+  }
+}
