@@ -4,23 +4,23 @@
 
 ### Functional Requirements
 
-- [x] **Product list** — Hiển thị name, category, price; badge "Rx" cho prescription items
-- [x] **Search & Filter** — Tìm kiếm case-insensitive; lọc theo category (All / Pain Relief / Antibiotic / Supplement / Allergy / Gastro)
-- [x] **Cart / Quick Order** — Nút +/- tăng/giảm số lượng (0..99); tổng SKUs, tổng quantity, tổng amount
-- [x] **Empty state** — Hiển thị khi không có kết quả tìm kiếm
-- [x] **Qty = 0 handling** — Mục với qty=0 không được tính trong giỏ
-- [x] **Robustness** — Không crash với data rỗng hoặc interact nhanh
+- [x] **Product list** — Displays name, category, price; shows an 'Rx' badge for prescription items
+- [x] **Search & Filter** — Case-insensitive search; filter by category (All / Pain Relief / Antibiotic / Supplement / Allergy / Gastro)
+- [x] **Cart / Quick Order** — `+`/`-` buttons to increase/decrease quantity (0..99); shows total SKUs, total quantity, and total amount
+- [x] **Empty state** — Shown when there are no search results
+- [x] **Qty = 0 handling** — Items with qty=0 are excluded from the cart calculations
+- [x] **Robustness** — Does not crash with empty data or rapid interactions
 
 ### Technical Requirements (Middle-level)
 
 - [x] **Code separation** — UI components (`src/components`) vs state/logic (`src/hooks`, `src/lib`)
-- [x] **README** — Hướng dẫn chạy, kiến trúc, và trade-offs
+- [x] **README** — Run instructions, architecture, and trade-offs
 
 ### Bonus Requirements
 
 - [x] **Debounced search** — 300ms debounce (`src/hooks/useDebounce.js`)
-- [x] **Unit tests** — 4 tests cho cart logic (`src/__tests__/cartUtils.test.js`, `src/__tests__/cartOps.test.js`)
-- [x] **Persist cart** — Dùng `AsyncStorage` (`src/hooks/useCart.js`)
+- [x] **Unit tests** — 4 tests for cart logic (`src/__tests__/cartUtils.test.js`, `src/__tests__/cartOps.test.js`)
+- [x] **Persist cart** — Use `AsyncStorage` (`src/hooks/useCart.js`)
 
 ---
 
@@ -50,7 +50,7 @@ quick-order-app/
 ├── package.json
 ├── app.json                    # Expo config
 ├── babel.config.js             # Babel config
-├── README.md                   # Hướng dẫn & docs
+├── README.md                   # Run instructions & docs
 └── node_modules/               # (not included in submission zip)
 ```
 
